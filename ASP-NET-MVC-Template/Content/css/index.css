@@ -1,0 +1,20 @@
+﻿h2.textCenter {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    width: auto;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5%;
+    border: 1px solid;
+    border-color: seagreen;
+    border-radius: 0.5em;
+}
+
+    .box::after {
+        margin: 0 auto;
+    }

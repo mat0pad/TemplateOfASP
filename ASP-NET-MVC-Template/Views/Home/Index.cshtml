@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+@section styles {
+    <link rel="stylesheet" href="Content/css/index.css">
+}
+
+<h2 class="textCenter">Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+<hr> <br>
+
+<button id="dumKnap">Tryk på mig!</button>
+
+<input id="inputFelt" title="skriv noget her...">
+
+<form id="box" class="box" method="post">
+	
+    <div class="form-group">
+        <label for="mailInput">Mail</label>
+        <input type="email" class="form-control" id="mailInput" aria-describedby="emailHelp" placeholder="Skriv din email her..">
+        <small id="emailHelp" class="form-text text-muted">Jeg vil stjæle din email...</small>
+    </div>
+
+	<div class="form-group">
+        <label for="passwordInput">Adgangskode</label>
+        <input type="password" class="form-control" id="passwordInput" placeholder="Skriv din adgangskode her..">
+    </div>
+
+	<button type="submit" class="btn btn-primary">Fortæl!</button>
+</form>
+
+<button id="hentNavn" class="btn btn-primary">Hent et navn!</button>
+
+@section scripts {
+    <script src="Scripts/index.js"></script>
+}

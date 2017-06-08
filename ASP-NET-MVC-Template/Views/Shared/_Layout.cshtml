@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include icon depending on device -->
+    <link rel="shortcut icon" href="Content/img/apple-touch-icon.png">
+	<link rel="shortcut icon" href="Content/img/favicon.ico">
+
+    <!-- Include css here -->
+	<link rel="stylesheet" href="Content/css/util/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/css/main.css">
+    @RenderSection("styles", false)
+
+	
+    <!-- Include modernizr -->
+	<script src="Scripts/util/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+	<!-- Legacy browser -->
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+	<![endif]-->
+		
+	@RenderBody()
+
+    <footer>
+        <p class="copyright">&copy; 2017 DUMMY!</p>
+    </footer>
+		
+    <script src="Scripts/util/jquery-3.1.1.min.js"></script>
+	<script src="Scripts/util/bootstrap.min.js"></script>
+		
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
+
